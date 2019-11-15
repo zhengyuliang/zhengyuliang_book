@@ -1,0 +1,629 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>智能照明项目说明 · 记录生活中的一些事及技术内容</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhengyuliang">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="理解Vue.mixin，利用Vue.mixin正确的偷懒.html" />
+    
+    
+    <link rel="prev" href="WebSocket.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    技术类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="axios知识点.html">
+            
+                <a href="axios知识点.html">
+            
+                    
+                    axios知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="WebSocket.html">
+            
+                <a href="WebSocket.html">
+            
+                    
+                    WebSocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="智能照明项目说明.html">
+            
+                <a href="智能照明项目说明.html">
+            
+                    
+                    智能照明项目说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="理解Vue.mixin，利用Vue.mixin正确的偷懒.html">
+            
+                <a href="理解Vue.mixin，利用Vue.mixin正确的偷懒.html">
+            
+                    
+                    理解Vue.mixin，利用Vue.mixin正确的偷懒
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../lefe_exp/README.md">
+            
+                <span>
+            
+                    
+                    生活类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >智能照明项目说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ut-smart-light">ut-smart-light</h1>
+<blockquote>
+<p>&#x667A;&#x80FD;&#x7167;&#x660E;&#x9879;&#x76EE;&#x524D;&#x7AEF;&#x5DE5;&#x7A0B;</p>
+</blockquote>
+<h2 id="&#x73AF;&#x5883;&#x548C;&#x4F9D;&#x8D56;">&#x73AF;&#x5883;&#x548C;&#x4F9D;&#x8D56;</h2>
+<ul>
+<li>node v10.16.x</li>
+<li>yarn v1.19.1</li>
+<li>webpack</li>
+<li>eslint</li>
+<li>@vue/cli ~3</li>
+<li><a href="https://github.com/vueComponent/ant-design-vue" target="_blank">ant-design-vue</a> - Ant Design Of Vue &#x5B9E;&#x73B0;</li>
+<li><a href="https://github.com/xyxiao001/vue-cropper" target="_blank">vue-cropper</a> - &#x5934;&#x50CF;&#x88C1;&#x526A;&#x7EC4;&#x4EF6;</li>
+<li><a href="https://antv.alipay.com/zh-cn/index.html" target="_blank">@antv/g2</a> - Alipay AntV &#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#x56FE;&#x8868;</li>
+<li><a href="https://viserjs.github.io/docs.html#/viser/guide/installation" target="_blank">Viser-vue</a>  - antv/g2 &#x5C01;&#x88C5;&#x5B9E;&#x73B0;</li>
+<li><a href="https://pro.loacg.com/docs/getting-started" target="_blank">ant-design-vue-pro</a> - &#x5B9A;&#x5236;&#x6587;&#x6863;</li>
+<li><a href="https://pro.loacg.com/docs/authority-management" target="_blank">&#x6743;&#x9650;&#x7BA1;&#x7406;</a> - admin pro&#x6743;&#x9650;&#x7BA1;&#x7406;&#x601D;&#x8DEF;</li>
+<li><a href="https://pro.loacg.com/docs/remove-authority-management" target="_blank">&#x79FB;&#x9664;&#x6743;&#x9650;&#x6821;&#x9A8C;&#x53C2;&#x8003;</a> - &#x79FB;&#x9664;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x6743;&#x9650;&#x7BA1;&#x7406;</li>
+</ul>
+<blockquote>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x4EEC;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x672C;&#x9879;&#x76EE;&#x4F7F;&#x7528; <a href="https://yarnpkg.com/" target="_blank">Yarn</a> &#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4E0E;&#x672C;&#x9879;&#x76EE;&#x6F14;&#x793A;&#x7AD9;&#x6240;&#x52A0;&#x8F7D;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x4F9D;&#x8D56;&#x7248;&#x672C; (yarn.lock) &#x3002;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5BF9;&#x4F9D;&#x8D56;&#x8FDB;&#x884C;&#x5F3A;&#x5236;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#xFF0C;&#x91C7;&#x7528;&#x975E; yarn &#x5305;&#x7BA1;&#x7406;&#x8FDB;&#x884C;&#x5F15;&#x5165;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x7531;&#x4E8E; Pro &#x6240;&#x4F9D;&#x8D56;&#x7684;&#x5E93;&#x5DF2;&#x7ECF;&#x5347;&#x7EA7;&#x7248;&#x672C;&#x800C;&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7248;&#x672C;&#x6240;&#x5BFC;&#x81F4;&#x7684;&#x95EE;&#x9898;&#x3002;&#x4F5C;&#x8005;&#x53EF;&#x80FD;&#x4F1A;&#x7531;&#x4E8E;&#x65F6;&#x95F4;&#x95EE;&#x9898;&#x65E0;&#x6CD5;&#x53CA;&#x65F6;&#x6392;&#x67E5;&#x800C;&#x5BFC;&#x81F4;&#x60A8;&#x91C7;&#x7528;&#x672C;&#x9879;&#x76EE;&#x4F5C;&#x4E3A;&#x57FA;&#x9879;&#x76EE;&#x800C;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<h2 id="&#x9879;&#x76EE;&#x4E0B;&#x8F7D;&#x548C;&#x8FD0;&#x884C;">&#x9879;&#x76EE;&#x4E0B;&#x8F7D;&#x548C;&#x8FD0;&#x884C;</h2>
+<ul>
+<li><p>&#x62C9;&#x53D6;&#x9879;&#x76EE;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> http://192.168.104.43/utfe/ut-smart-light.git
+<span class="hljs-built_in">cd</span> ut-smart-light
+</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;</p>
+<pre><code>yarn install
+</code></pre></li>
+<li><p>&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x8FD0;&#x884C;</p>
+<pre><code>yarn run serve
+</code></pre></li>
+<li><p>&#x7F16;&#x8BD1;&#x9879;&#x76EE;</p>
+<pre><code>yarn run build
+</code></pre></li>
+<li><p>Lints and fixes files</p>
+<pre><code>yarn run lint
+</code></pre></li>
+</ul>
+<h2 id="&#x5176;&#x4ED6;&#x8BF4;&#x660E;">&#x5176;&#x4ED6;&#x8BF4;&#x660E;</h2>
+<ul>
+<li><p>&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x7684; <a href="https://cli.vuejs.org/guide/" target="_blank">vue-cli3</a>, &#x8BF7;&#x66F4;&#x65B0;&#x60A8;&#x7684; cli</p>
+</li>
+<li><p>&#x5173;&#x95ED; Eslint (&#x4E0D;&#x63A8;&#x8350;) &#x79FB;&#x9664; <code>package.json</code> &#x4E2D; <code>eslintConfig</code> &#x6574;&#x4E2A;&#x8282;&#x70B9;&#x4EE3;&#x7801;, <code>vue.config.js</code> &#x4E0B;&#x7684; <code>lintOnSave</code> &#x503C;&#x6539;&#x4E3A; <code>false</code></p>
+</li>
+<li><p>&#x5F00;&#x542F;&#x7EC4;&#x4EF6;&#x6309;&#x9700;&#x52A0;&#x8F7D; <code>/src/main.js</code> L7 &#x4FEE;&#x6539;&#x4E3A; <code>import &apos;./core/lazy_use&apos;</code></p>
+</li>
+<li><p>&#x4FEE;&#x6539; Ant Design &#x914D;&#x8272;&#xFF0C;&#x5728;&#x6587;&#x4EF6; <code>vue.config.js</code> &#x4E2D;&#xFF0C;&#x5176;&#x4ED6; less &#x53D8;&#x91CF;&#x8986;&#x76D6;&#x53C2;&#x8003; <a href="https://ant.design/docs/react/customize-theme-cn" target="_blank">ant design</a> &#x5B98;&#x65B9;&#x8BF4;&#x660E;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">css</span>: {
+  <span class="hljs-attribute">loaderOptions</span>: {
+    less: {
+      modifyVars: {
+        <span class="hljs-comment">/* less &#x53D8;&#x91CF;&#x8986;&#x76D6;&#xFF0C;&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49; ant design &#x4E3B;&#x9898; */</span>
+
+        <span class="hljs-string">&apos;primary-color&apos;</span>: <span class="hljs-string">&apos;#F5222D&apos;</span>,
+        <span class="hljs-string">&apos;link-color&apos;</span>: <span class="hljs-string">&apos;#F5222D&apos;</span>,
+        <span class="hljs-string">&apos;border-radius-base&apos;</span>: <span class="hljs-string">&apos;4px&apos;</span>,
+      },
+      <span class="hljs-selector-tag">javascriptEnabled</span>: <span class="hljs-selector-tag">true</span>,
+    }
+  }
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x7EA6;&#x5B9A;&#x5F0F;&#x63D0;&#x4EA4;&#x548C;git-flow">&#x7EA6;&#x5B9A;&#x5F0F;&#x63D0;&#x4EA4;&#x548C;git-flow</h2>
+<blockquote>
+<p>&#x672C;&#x9879;&#x76EE;commit message&#x9075;&#x5B88;&#x7EA6;&#x5B9A;&#x5F0F;&#x63D0;&#x4EA4;
+&#x4EE3;&#x7801;&#x7BA1;&#x7406;&#x9075;&#x5B88;git-flow&#x5DE5;&#x4F5C;&#x6D41;&#x6A21;&#x5F0F;</p>
+</blockquote>
+<p> <a href="https://www.conventionalcommits.org/zh-cn/v1.0.0-beta.4/" target="_blank">&#x7EA6;&#x5B9A;&#x5F0F;&#x63D0;&#x4EA4;</a></p>
+<h2 id="npm-vs-yarn">npm vs yarn</h2>
+<p>  &#x547D;&#x4EE4;&#x5BF9;&#x6BD4;: <a href="https://yarnpkg.com/zh-Hans/docs/migrating-from-npm#toc-cli-commands-comparison" target="_blank">https://yarnpkg.com/zh-Hans/docs/migrating-from-npm#toc-cli-commands-comparison</a></p>
+<h2 id="&#x9879;&#x76EE;&#x76F8;&#x5173;&#x8D44;&#x6599;">&#x9879;&#x76EE;&#x76F8;&#x5173;&#x8D44;&#x6599;</h2>
+<p>&#x9700;&#x6C42;&#x6587;&#x6863;&#xFF1A;<a href="http://192.168.104.43/lightProduct/product" target="_blank">http://192.168.104.43/lightProduct/product</a>
+&#x84DD;&#x72D0;&#x8BBE;&#x8BA1;&#x7A3F;&#xFF1A;<a href="https://lanhuapp.com/url/7e6lW-qm3Ne" target="_blank">https://lanhuapp.com/url/7e6lW-qm3Ne</a>   &#xFF08;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x627E;&#x9648;&#x8FEA;&#x5F3A;&#x9080;&#x8BF7;&#xFF09;</p>
+<h2 id="&#x8868;&#x5355;&#x6821;&#x9A8C;">&#x8868;&#x5355;&#x6821;&#x9A8C;</h2>
+<blockquote>
+<p>&#x9879;&#x76EE;&#x4E2D;&#x6240;&#x6709;&#x8BBE;&#x8BA1;&#x7684;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x5FC5;&#x987B;&#x6709;&#x7EA6;&#x675F;&#x548C;&#x6821;&#x9A8C;&#xFF08;&#x7279;&#x6B8A;&#x8981;&#x6C42;&#x9664;&#x5916;&#xFF09;.</p>
+</blockquote>
+<h2 id="&#x6A21;&#x5757;&#x7ED3;&#x6784;&#x76F8;&#x5173;&#x7EA6;&#x5B9A;">&#x6A21;&#x5757;&#x7ED3;&#x6784;&#x76F8;&#x5173;&#x7EA6;&#x5B9A;</h2>
+<p>&#x4E3E;&#x4F8B;&#xFF1A;&#x8BBE;&#x5907;&#x6A21;&#x5757;</p>
+<pre><code>device                          # &#x529F;&#x80FD;&#x6A21;&#x5757;
+&#x251C;&#x2500;&#x2500; common                      # &#x516C;&#x5171;&#x5C42;&#xFF08;&#x9700;&#x8981;&#x65F6;&#x624D;&#x5EFA;&#x7ACB;&#xFF09;
+&#x251C;&#x2500;&#x2500; components                  # &#x516C;&#x5171;&#x7EC4;&#x4EF6;&#xFF08;&#x9700;&#x8981;&#x65F6;&#x624D;&#x5EFA;&#x7ACB;&#xFF09;
+&#x251C;&#x2500;&#x2500; services                    # &#x63A5;&#x53E3;&#x670D;&#x52A1;&#x5C42;&#xFF08;service&#x4F9D;&#x8D56;api+transformer&#xFF0C;&#x505A;&#x53C2;&#x6570;&#x7684;&#x5904;&#x7406;&#x548C;&#x7ED3;&#x679C;&#x7684;&#x8F6C;&#x6362;&#xFF09;
+&#x251C;&#x2500;&#x2500; transformers                # &#x8F6C;&#x6362;&#x5C42;&#xFF08;&#x524D;&#x7AEF;&#x7EC4;&#x4EF6;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x7ED3;&#x679C;&#x4E0D;&#x4E00;&#x81F4;&#x518D;&#x8FD9;&#x91CC;&#x8F6C;&#x6362;&#xFF09;
+&#x2514;&#x2500;&#x2500; views                       # &#x5B50;&#x529F;&#x80FD;&#x6A21;&#x5757;
+    &#x251C;&#x2500;&#x2500; device-controller       # &#x8BBE;&#x5907;&#x63A7;&#x5236;&#x5B50;&#x6A21;&#x5757; (&#x4E0B;&#x9762;&#x7684;&#x5B50;&#x76EE;&#x5F55;&#x8FD8;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x91CD;&#x590D;&#x4E0A;&#x5C42;&#x7684;&#x7ED3;&#x6784;)
+    &#x2502;   &#x251C;&#x2500;&#x2500; common
+    &#x2502;   &#x251C;&#x2500;&#x2500; components
+    &#x2502;   &#x251C;&#x2500;&#x2500; services
+    &#x2502;   &#x2514;&#x2500;&#x2500; transformers
+    &#x251C;&#x2500;&#x2500; device-manage           # &#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x5B50;&#x6A21;&#x5757;
+    &#x2514;&#x2500;&#x2500; region-manage           # &#x533A;&#x57DF;&#x5206;&#x7EC4;&#x5B50;&#x6A21;&#x5757;
+</code></pre><blockquote>
+<p>&#x8FD9;&#x6837;&#x505A;&#x7684;&#x597D;&#x5904;&#x662F;&#x628A;&#x57FA;&#x4E8E;&#x6A21;&#x5757;&#x5316;&#x7684;&#x601D;&#x60F3;&#xFF0C;&#x5C31;&#x8FD1;&#x539F;&#x5219;&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x4F9D;&#x8D56;
+&#x5982;&#x679C;&#x5B50;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x6709;&#x4F9D;&#x8D56;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x628A;&#x4F9D;&#x8D56;&#x62BD;&#x8C61;&#x63D0;&#x53D6;&#x5230;&#x7236;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x4F9D;&#x8D56;&#xFF0C;&#x9632;&#x6B62;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x3002;</p>
+</blockquote>
+<h3 id="&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x7EA6;&#x5B9A;">&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x7EA6;&#x5B9A;</h3>
+<p>&#x76EE;&#x5F55;&#x540D;&#x79F0;&#xFF1A;kebab-case  &#x5168;&#x90E8;&#x5C0F;&#x5199;&#xFF0C;&#x8FDE;&#x5B57;&#x7B26;-&#x94FE;&#x63A5;&#x591A;&#x4E2A;&#x5355;&#x8BCD;
+&#x6587;&#x4EF6;&#x540D;&#x79F0;&#xFF1A;PascalCase  &#x5168;&#x90E8;&#x5927;&#x5199;&#x9A7C;&#x5CF0;&#xFF08;&#x901A;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x7EA6;&#x5B9A;&#x9664;&#x5916;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;index.vue, index.js...&#x4E4B;&#x7C7B;.&#xFF09;</p>
+<h2 id="ajax&#x6A21;&#x5757;&#x6CE8;&#x610F;&#x4E8B;&#x9879;">Ajax&#x6A21;&#x5757;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<pre><code class="lang-javascrpt">const url = &apos;/api/web/user/delete/batch&apos;
+const data = {
+  id: 123
+}
+
+// &#x56E0;&#x4E3A;Ajax&#x548C;axios&#x5185;&#x90E8;&#x5BF9;data&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x5E8F;&#x5217;&#x5316;&#x5904;&#x7406;&#xFF0C;&#x6240;&#x4EE5;axios&#x4F1A;&#x6839;&#x636E;data&#x7684;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x5207;&#x6362;
+// &apos;Content-Type&apos;&#xFF0C;&#x5982;&#x679C;&#x65F6;string&#x5C31;&#x4F7F;&#x7528;    application/x-www-form-urlencoded
+// &#x4E0D;&#x662F;string&#x7C7B;&#x578B;&#xFF0C;&#x5C31;&#x4F7F;&#x7528;application/json&#xFF0C;&#x4F46;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x53E3;&#x4E0D;&#x4E00;&#x5B9A;&#x80FD;&#x591F;&#x8C03;&#x7528;&#x6210;&#x529F;&#xFF0C;
+// &#x6240;&#x4EE5;**&#x975E;string**&#x7C7B;&#x578B;&#x6700;&#x597D;&#x4F7F;&#x7528;`qs`&#x5904;&#x7406;&#x4E0B;
+// &#x8C03;&#x7528;src/api/utils&#x4E2D;&#x7684;stringify
+Ajax.post(url, data)
+// Ajax.post(url, stringify(data))
+</code></pre>
+<h2 id="websocket">WebSocket</h2>
+<blockquote>
+<p>&#x9879;&#x76EE;&#x4E2D;&#x7684;WebSocket&#x5DF2;&#x7ECF;&#x5BF9;&#x63A5;&#x5B8C;&#x6BD5;&#xFF0C;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;</p>
+</blockquote>
+<h3 id="&#x4E1A;&#x52A1;&#x9875;&#x9762;&#x4F7F;&#x7528;">&#x4E1A;&#x52A1;&#x9875;&#x9762;&#x4F7F;&#x7528;</h3>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">import</span> { PubSubBus } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@commonset/pubsubbus&apos;</span>
+
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+
+    mounted () {
+      <span class="hljs-comment">// data&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x770B;import(&apos;@commonset/types&apos;).CommonEvent</span>
+      PubSubBus.$on(<span class="hljs-string">&apos;eventName&apos;</span>, (eventName, data) =&gt; {
+        <span class="hljs-comment">// &#x5E72;&#x4F60;&#x60F3;&#x5E72;&#x7684;&#x4E8B;</span>
+      })
+
+      <span class="hljs-keyword">this</span>.$once(<span class="hljs-string">&apos;hook:beforeDestroy&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        PubSubBus.$off(<span class="hljs-string">&apos;eventName&apos;</span>)
+      })
+    }
+  }
+</code></pre>
+<h3 id="&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x548C;&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x548C;&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<blockquote>
+<p>src/common/websocket/constants/EventConstants.js
+```javascript
+// &#x8F6C;&#x6362;&#x5668;&#x7684;&#x4EE3;&#x7801;
+export const smartHomeMessageTransformer = {
+  /**</p>
+<ul>
+<li>transform - &#x8F6C;&#x6362;</li>
+<li>@param { import(&apos;@/types&apos;).SmartHomeEvent } data</li>
+<li>@returns { import(&apos;@commonset/types&apos;).CommonEvent } - &#x901A;&#x8FC7;&#x7528;&#x7684;&#x6D88;&#x606F;&#x7ED3;&#x6784;
+*/
+transform: function (data) {
+return {
+ type: data.type,
+ code: 0,
+ message: <code>${data.eventType}.${data.bussType}</code>,
+ data: {
+   content: &apos;&apos;,
+   extraProps: data.body
+ }
+}
+}
+}</li>
+</ul>
+</blockquote>
+<pre><code>
+&gt; &#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+```javascript
+export const SmartLightEventTypes = {
+  &apos;device.status.update&apos;: &apos;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x66F4;&#x65B0;&apos;,
+  &apos;host.status.update&apos;: &apos;&#x4E3B;&#x673A;&#x72B6;&#x6001;&#x66F4;&#x65B0;&apos;,
+  &apos;user.update&apos;: &apos;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x66F4;&#x65B0;&#xFF0C;&#x540E;&#x8DDF;&#x89D2;&#x8272;&#x7C7B;&#x578B;&apos;,
+  &apos;user.update.superAdminlight&apos;: &apos;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;&apos;,
+  &apos;user.update.administrator&apos;: &apos;&#x7BA1;&#x7406;&#x5458;&apos;,
+  &apos;user.update.operator&apos;: &apos;&#x64CD;&#x4F5C;&#x5458;&apos;,
+  &apos;user.update.reporter&apos;: &apos;&#x544A;&#x8B66;&#x4EBA;&apos;,
+  &apos;user.delete&apos;: &apos;&#x7528;&#x6237;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x540E;&#x8DDF;&#x89D2;&#x8272;&#x7C7B;&#x578B;&apos;,
+  &apos;user.delete.superAdminlight&apos;: &apos;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;&apos;,
+  &apos;user.delete.administrator&apos;: &apos;&#x7BA1;&#x7406;&#x5458;&apos;,
+  &apos;user.delete.operator&apos;: &apos;&#x64CD;&#x4F5C;&#x5458;&apos;,
+  &apos;user.delete.reporter&apos;: &apos;&#x544A;&#x8B66;&#x4EBA;&apos;,
+  &apos;region.update&apos;: &apos;&#x533A;&#x57DF;&#x4FE1;&#x606F;&#x66F4;&#x65B0;&apos;,
+  &apos;region.delete&apos;: &apos;&#x533A;&#x57DF;&#x88AB;&#x5220;&#x9664;&apos;,
+  &apos;message.add&apos;: &apos;&#x6709;&#x65B0;&#x6D88;&#x606F;&#xFF0C;&#x540E;&#x8DDF;&#x6D88;&#x606F;&#x7C7B;&#x578B;&apos;,
+  &apos;message.add.warning&apos;: &apos;&#x544A;&#x8B66;&#x6D88;&#x606F;&apos;,
+  &apos;scene.update&apos;: &apos;&#x7B56;&#x7565;&#x65B9;&#x6848;&#x66F4;&#x65B0;&#xFF0C;&#x540E;&#x8DDF;linkageType&#x3001;periodType&apos;,
+  &apos;scene.delete&apos;: &apos;&#x7B56;&#x7565;&#x65B9;&#x6848;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x540E;&#x8DDF;linkageType periodType&apos;,
+  &apos;scene.delete.manual&apos;: &apos;&#x624B;&#x52A8;&#x7B56;&#x7565;&#x65B9;&#x6848;&apos;,
+  &apos;scene.delete.auto.daily&apos;: &apos;&#x65E5;&#x65B9;&#x6848;&apos;,
+  &apos;scene.delete.auto.weekly&apos;: &apos;&#x5468;&#x65B9;&#x6848;&apos;,
+  &apos;scene.delete.auto.holiday&apos;: &apos;&#x8282;&#x5047;&#x65E5;&#x65B9;&#x6848;&apos;,
+  &apos;scene.update.manual&apos;: &apos;&#x624B;&#x52A8;&#x7B56;&#x7565;&#x65B9;&#x6848;&apos;,
+  &apos;scene.update.auto.daily&apos;: &apos;&#x65E5;&#x65B9;&#x6848;&apos;,
+  &apos;scene.update.auto.weekly&apos;: &apos;&#x5468;&#x65B9;&#x6848;&apos;,
+  &apos;scene.update.auto.holiday&apos;: &apos;&#x8282;&#x5047;&#x65E5;&#x65B9;&#x6848;&apos;
+}
+</code></pre><blockquote>
+<p>&#x6570;&#x636E;&#x7ED3;&#x6784;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5176;&#x4E2D;&#x7684;body&#x5B57;&#x6BB5;&#xFF0C;&#x5168;&#x90E8;&#x8F6C;&#x6362;&#x5230;extraProps&#x5B57;&#x6BB5;&#x4E0A;</span>
+<span class="hljs-comment">// &#x8F6C;&#x6362;&#x4E4B;&#x540E;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4E1A;&#x52A1;&#x754C;&#x9762;&#x63A5;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</span>
+{
+  type: data.type,
+  code: <span class="hljs-number">0</span>,
+  message: <span class="hljs-string">`<span class="hljs-subst">${data.eventType}</span>.<span class="hljs-subst">${data.bussType}</span>`</span>,
+  data: {
+    content: <span class="hljs-string">&apos;&apos;</span>,
+    extraProps: data.body
+  }
+}
+
+{
+  <span class="hljs-string">&quot;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x66F4;&#x65B0;&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;device.status.update&quot;</span>,
+    <span class="hljs-string">&quot;bussType&quot;</span>: <span class="hljs-number">7000</span>,
+    <span class="hljs-string">&quot;eventType&quot;</span>: <span class="hljs-number">4</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: {
+      <span class="hljs-string">&quot;deviceId&quot;</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-string">&quot;productDevId&quot;</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-string">&quot;productDevStatus&quot;</span>: <span class="hljs-number">0</span>
+    }
+  },
+  <span class="hljs-string">&quot;&#x4E3B;&#x673A;&#x72B6;&#x6001;&#x66F4;&#x65B0;&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;host.status.update&quot;</span>,
+    <span class="hljs-string">&quot;bussType&quot;</span>: <span class="hljs-number">7001</span>,
+    <span class="hljs-string">&quot;eventType&quot;</span>: <span class="hljs-number">4</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: {
+      <span class="hljs-string">&quot;hostId&quot;</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-string">&quot;hostStatus&quot;</span>: <span class="hljs-number">1</span>
+    }
+  },
+  <span class="hljs-string">&quot;eventType&quot;</span>: {
+    <span class="hljs-string">&quot;1&quot;</span>: <span class="hljs-string">&quot;&#x65B0;&#x589E;&quot;</span>,
+    <span class="hljs-string">&quot;2&quot;</span>: <span class="hljs-string">&quot;&#x5220;&#x9664;&quot;</span>,
+    <span class="hljs-string">&quot;3&quot;</span>: <span class="hljs-string">&quot;&#x4FEE;&#x6539;&quot;</span>
+  },
+  <span class="hljs-string">&quot;&#x65B0;&#x589E;&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;*.add&quot;</span>,
+    <span class="hljs-string">&quot;bussType&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;eventType&quot;</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: {
+      <span class="hljs-string">&quot;entityId&quot;</span>: <span class="hljs-number">1</span>
+    }
+  },
+  <span class="hljs-string">&quot;&#x4FEE;&#x6539;&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;*.update&quot;</span>,
+    <span class="hljs-string">&quot;bussType&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;eventType&quot;</span>: <span class="hljs-number">3</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: {
+      <span class="hljs-string">&quot;entityId&quot;</span>: <span class="hljs-number">1</span>
+    }
+  },
+  <span class="hljs-string">&quot;&#x5220;&#x9664;&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;*.delete&quot;</span>,
+    <span class="hljs-string">&quot;bussType&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;eventType&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;body&quot;</span>: {
+      <span class="hljs-string">&quot;entityId&quot;</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-string">&quot;messageContent&quot;</span>: <span class="hljs-string">&quot;&#x63D0;&#x793A;&#x4FE1;&#x606F;&quot;</span>
+    }
+  }
+}
+</code></pre>
+<h2 id="vue-ext&#x76EE;&#x5F55;">vue-ext&#x76EE;&#x5F55;</h2>
+<blockquote>
+<p>vue-ext&#x76EE;&#x5F55;&#xFF0C;&#x653E;&#x7F6E;&#x5BF9;vue&#x7684;&#x6269;&#x5C55;&#xFF0C; main&#x6587;&#x4EF6;&#x4E2D;&#x8C03;&#x7528;setup&#x65B9;&#x6CD5;</p>
+</blockquote>
+<h3 id="mixins">mixins</h3>
+<blockquote>
+<p>&#x76EE;&#x524D;&#x6269;&#x5C55;&#x4E86;vue&#xFF0C;&#x6DFB;&#x52A0;&#x4E86;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;</p>
+</blockquote>
+<p>// api mixins&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x65B9;&#x4FBF;&#x5BF9;api&#x7ED3;&#x679C;&#x5904;&#x7406;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { apiResolveHandler, apiRejectHandler } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@/api/utils&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  methods: {
+    apiResolver: apiResolveHandler,
+    apiRejecter: apiRejectHandler
+  }
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zhengyuliang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x7F16;&#x5199;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-14 09:41:07
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="WebSocket.html" class="navigation navigation-prev " aria-label="Previous page: WebSocket">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="理解Vue.mixin，利用Vue.mixin正确的偷懒.html" class="navigation navigation-next " aria-label="Next page: 理解Vue.mixin，利用Vue.mixin正确的偷懒">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"智能照明项目说明","level":"1.2.3","depth":2,"next":{"title":"理解Vue.mixin，利用Vue.mixin正确的偷懒","level":"1.2.4","depth":2,"path":"technology/理解Vue.mixin，利用Vue.mixin正确的偷懒.md","ref":"technology/理解Vue.mixin，利用Vue.mixin正确的偷懒.md","articles":[]},"previous":{"title":"WebSocket","level":"1.2.2","depth":2,"path":"technology/WebSocket.md","ref":"technology/WebSocket.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sectionx","splitter","tbfed-pagefooter","-lunr","-search","search-plus","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhengyuliang","modify_label":"该文件编写时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"donate":{"alipay":"https://github.com/zhengyuliang/Blog-Back-Up/blob/master/images/alipay-min.jpg?raw=true","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://github.com/zhengyuliang/Blog-Back-Up/blob/master/images/weixin-min.jpg?raw=true","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"zhengyuliang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"记录生活中的一些事及技术内容","gitbook":"*","description":"记录Gitbook的配置和一些插件的使用"},"file":{"path":"technology/智能照明项目说明.md","mtime":"2019-11-14T01:41:07.870Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-15T07:35:11.216Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

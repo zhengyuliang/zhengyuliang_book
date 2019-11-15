@@ -1,0 +1,32 @@
+{
+	"title" : "记录生活中的一些事及技术内容",
+	"author" : "zhengyuliang",
+	"description" : "记录Gitbook的配置和一些插件的使用",
+	"plugins": [
+		"sectionx",
+		"splitter",
+		"tbfed-pagefooter",
+		"-lunr",
+		"-search",
+		"search-plus",
+		"donate"
+	],
+	 "pluginsConfig":{
+	 	"sectionx": {
+          "tag": "b"
+        },
+        "tbfed-pagefooter": {
+	        "copyright":"Copyright &copy zhengyuliang",
+	        "modify_label": "该文件编写时间：",
+	        "modify_format": "YYYY-MM-DD HH:mm:ss"
+	    },
+	    "donate": {
+        "wechat": "https://github.com/zhengyuliang/Blog-Back-Up/blob/master/images/weixin-min.jpg?raw=true",
+        "alipay": "https://github.com/zhengyuliang/Blog-Back-Up/blob/master/images/alipay-min.jpg?raw=true",
+        "title": "",
+        "button": "赏",
+        "alipayText": "支付宝打赏",
+        "wechatText": "微信打赏"
+    }
+	 }
+}
