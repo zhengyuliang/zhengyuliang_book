@@ -2,11 +2,14 @@
 
 > 神，请好好研究一下async-await功能，接下来的业务需求中，用处巨巨巨巨大，请同我学习，我教你们。
 
-
+> 请每一行每一句的去了解，并使用些方法。坑要认真的填，别被埋了
+>
 
 #### async - 定义异步函数
 
  `async` 译：异步，是 Generator 函数的语法糖。该函数会返回一个promise对象，可以使用`then`方法添加回调函数，如果在函数内直接 `return`，Async会通过**Promise.resolve()**将其封装成Promise()对象，也可以通过`.then`添加回调函数
+
+> async 为异步函数，请牢记 ，如下面例子
 
 ```javascript
 async function pms() {
@@ -35,13 +38,15 @@ pms().then(res => {
 })
 ```
 
+> 坑1：async的使用，有await,就一定要async，牛逼人都应该能记住
+
 #### await - 暂停异步函数的执行
 
 > 您历害了，你历害了，没有你怎么处理，await不错
 
 `await`，即：async wait，旨在**等待异步执行结束，使用于async函数内部**。异步未执行结束，阻塞当前代码。嗯哼？**阻塞！！！**
 
-  与线程阻塞不同的是，`await` 的阻塞发生在 `async` 函数内部，可以理解为一个异步的阻塞。跟在`await`后的JS表达式，可以等待很多类型的事件，但初衷是用于等待Promise对象。如果`await`的对象是promise对象，则阻塞异步函数代码执行等待promise的`resolve`状态，如果是同步执行的表达式则立即执行。
+  与线程阻塞不同的是，`await` 的阻塞发生在 `async` 函数内部，可以理解为一个异步的阻塞。跟在`await`后的JS表达式，可以等待很多类型的事件，但初衷是用于等待**Promise**对象。如果`await`的对象是promise对象，则阻塞异步函数代码执行等待promise的`resolve`状态，如果是同步执行的表达式则立即执行。
 
 #### async/await的使用
 
@@ -114,7 +119,8 @@ async function awaitDemo() {
 awaitDemo()  // 如果没有使用try-catch，执行会报错
 ```
 
-
+> 坑1很重要，请认识注重异常处理方式
+>
 
 #### 【填坑2】并行请求
 
@@ -154,6 +160,8 @@ async function correctDemo() {
 }
 ```
 
+> 牛逼吧，要用Promise.all来处理同步，什么叫同步，就是更好的使用咯。
+
 #### 【填坑3】await必须在async的上下文中
 
  `await` 并不只是使用在`async` 函数中即可，还必须在`asyn`函数的上下文中 
@@ -175,3 +183,4 @@ async function correctDemo() {
 }
 ```
 
+> 理解没，我感觉到，本人好像理解，对，不是好像，是己经掌握
