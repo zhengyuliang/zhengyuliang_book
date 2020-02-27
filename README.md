@@ -10,3 +10,17 @@
 
    经验总结而尔，就写写自己的一些心点，没有大用
 
+
+
+### 使用说明
+
+```
+gitbook serve 
+// 搭建服务内容
+```
+
+
+
+### 简单技术教程
+
+http://www.chengweiyang.cn/gitbook/index.html

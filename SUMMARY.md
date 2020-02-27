@@ -2,6 +2,7 @@
 
 * [说明](README.md)
 * [技术类](technology/README.md)
+	
 	* [axios知识点](technology/axios知识点.md)
 	* [WebSocket](technology/WebSocket.md)
 	* [智能照明项目说明](technology/智能照明项目说明.md)
@@ -12,5 +13,16 @@
 	* [JavaScript之防抖Debounce和节流Throttle](technology/JavaScript之防抖Debounce和节流Throttle.md)
 	* [Vue.set和this.$set应用的场景](technology/Vue.set和this.$set应用的场景.md)
 	* [vue高级技巧](technology/vue高级技巧.md)
-* [生活类](lefe_exp/README.md)
+	* [npm常用命令大全](technology/npm常用命令大全.md)
+	* [7个有用的Vue开发技巧](technology/7个有用的Vue开发技巧.md)
+	* [18种CSS命名和书写规范](technology/18种CSS命名和书写规范.md)
+	* [5种常见函数的写法和调用方式](technology/5种常见函数的写法和调用方式.md)
+	* [Vue.set使用场景](technology/Vue.set和this.$set应用的场景.md)
+	* [Vue 的父组件和子组件生命周期钩子函数执行顺序？](technology/Vue 的父组件和子组件生命周期钩子函数执行顺序？.md)
+	* [探讨JavaScript的优雅写法](technology/JavaScript的优雅写法.md)
+* [生活类](life_exp/README.md)
+
+  -  [程序员的发展方向](life_exp/程序员的发展方向.md)
+
+    
 
