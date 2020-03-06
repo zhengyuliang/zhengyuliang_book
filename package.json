@@ -1,0 +1,43 @@
+{
+  "name": "z_book",
+  "version": "0.0.1",
+  "description": "记录一些技术书知识，收录一些内容",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-sectionx": "^3.1.0",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-search-plus": "^1.0.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "cz-conventional-changelog": "^3.1.0",
+    "husky": "^4.2.3"
+  },
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengyuliang/zhengyuliang_book.git"
+  },
+  "author": "zhengyuliang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengyuliang/zhengyuliang_book/issues"
+  },
+  "homepage": "https://github.com/zhengyuliang/zhengyuliang_book#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -x @commitlint/config-conventional -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
