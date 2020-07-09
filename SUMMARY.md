@@ -21,8 +21,14 @@
 	* [Vue 的父组件和子组件生命周期钩子函数执行顺序？](technology/Vue 的父组件和子组件生命周期钩子函数执行顺序？.md)
 	* [探讨JavaScript的优雅写法](technology/JavaScript的优雅写法.md)
 * [生活类](life_exp/README.md)
+  * [程序员的发展方向](life_exp/程序员的发展方向.md)  
+  * [告别平庸的15个小方法](life_exp/告别平庸的15个小方法.md)
+  * [日志记录](life_exp/日志记录.md)
 
-  -  [程序员的发展方向](life_exp/程序员的发展方向.md)
 
-    
+- [信息类](message/README.md)
+- [教程](tutorial/README.md)
 
+  - [发布npm的教程](tutorial/发布npm的教程.md)
+  - [npm镜像切换](tutorial/npm镜像切换.md)
+  - [Vue 规范](tutorial/Vue 规范.md)
