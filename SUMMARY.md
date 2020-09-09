@@ -34,5 +34,5 @@
 
   - [发布npm的教程](tutorial/发布npm的教程.md)
   - [npm镜像切换](tutorial/npm镜像切换.md)
-  - [Vue 规范](tutorial/Vue 规范.md)
+  - [Vue规范](tutorial/Vue规范.md)
   - [Esmap地图详解](tutorial/Esmap地图详解.md)

@@ -4,6 +4,6 @@
 
 -  发布npm的教程
 -  npm镜像切换
--  Vue 规范
+-  Vue规范
 -  Esmap地图详解
 
