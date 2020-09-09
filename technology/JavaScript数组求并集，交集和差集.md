@@ -114,3 +114,21 @@ alert(r);
 // 去除重复元素依靠的是indexOf总是返回第一个元素的位置，后续的重复元素位置与indexOf返回的位置不相等，因此被filter滤掉了。
 ```
 
+### 数组对象的差集、并集等
+
+> 数组的对像的差集与并集的判断等功能
+
+```javascript
+// 差集
+// arr arr1 数组对象的对比 type属性
+export function chackAontrastArr (arr, arr1, type) {
+  return [...arr].filter(x => [...arr1].every(y => y[type] !== x[type]))
+}
+
+// 并集
+// arr arr1 数组对象的对比 type属性
+export function someAontrastArr (arr, arr1) {
+  return [...arr1].filter(x => [...arr].some(y => y[type] === X[type]))
+}
+```
+
