@@ -31,8 +31,6 @@
 
 - [信息类](message/README.md)
 - [教程](tutorial/README.md)
-
-  - [发布npm的教程](tutorial/发布npm的教程.md)
+- [发布npm的教程](tutorial/发布npm的教程.md)
   - [npm镜像切换](tutorial/npm镜像切换.md)
-  - [Vue规范](tutorial/Vue规范.md)
   - [Esmap地图详解](tutorial/Esmap地图详解.md)
